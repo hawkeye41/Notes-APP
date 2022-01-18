@@ -59,6 +59,20 @@ textarea:focus{
     margin-bottom: 2em;
 
 }
+#toggle{
+    width: 50px;
+}
+#toggle-circle{
+    display: flex;
+    border-radius: 50%;
+    justify-content: flex-start;
+    background-color: black;
+    width: 10px;
+    transition: all 0.3s linear;
+    height: 10px;
+}
+
+
 .search input{
     border: none;
     width: 100vw;
@@ -80,4 +94,10 @@ textarea:focus{
 .dark-mode h1{
     color: white;
 }
- 
+.dark-mode #toggle-circle{
+    display: flex;
+    transition: all 0.3s linear;
+    transform: translateX(20px);
+    background-color: rgb(236, 12, 12);
+    justify-content: flex-end;
+}
